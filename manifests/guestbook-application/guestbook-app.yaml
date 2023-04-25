@@ -26,8 +26,8 @@ metadata:
   name: guestbook-ui
 spec:
   ports:
-    - port: 8082
-      protocol: TCP
-    type: LoadBalancer
+  - port: 8082
+    protocol: TCP
+  type: LoadBalancer
   selector:
     app: guestbook-ui
