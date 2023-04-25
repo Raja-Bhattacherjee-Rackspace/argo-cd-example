@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: ui
+  namespace: argocd
+spec:
+  description: ui
+  sourceRepos:
+    - '*'
+
+  destinations:
+    - namespace: '*'
+      server: '*'
+
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+
+  namespaceResourceWhitelist:
+    - group: '*'
+      kind: '*'
