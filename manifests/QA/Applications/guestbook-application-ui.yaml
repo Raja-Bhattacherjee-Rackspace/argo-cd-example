@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: "https://github.com/Raja-Bhattacherjee-Rackspace/argo-cd-example.git"
     targetRevision: HEAD
-    path: manifests/QA/guestbook-application
+    path: manifests/QA/guestbook-application-ui
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
