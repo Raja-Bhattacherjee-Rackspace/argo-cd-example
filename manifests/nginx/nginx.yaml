@@ -16,7 +16,7 @@ spec:
       - name: my-nginx
         image: nginx
         ports:
-        - containerPort: 8081
+        - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
